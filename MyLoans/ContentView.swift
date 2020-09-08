@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedIndex = 0
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            BackgroundView()
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                TopView()
+                    .padding(.top, 32)
+                
+                OverdueView()
+                    .padding(.top, 32)
+                
+                InactiveView()
+                
+                Spacer()
+            }
+            
+            VStack {
+                Spacer()
+                
+                TabView(selectedIndex: self.$selectedIndex)
+            }
+        }
     }
 }
 
