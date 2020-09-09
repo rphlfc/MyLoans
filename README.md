@@ -1,4 +1,4 @@
-# Meeting App
+# My Loans
 Mais um [layout](https://www.instagram.com/p/CD--FN3AL6t/) que encontrei no Instagram. Na implementação utilizei GeometryReader para fazer o background.
 
 ## Screenshots
